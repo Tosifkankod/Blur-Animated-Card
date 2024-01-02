@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards_container {
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card_container {
+    width: 400px;
+    height: 500px;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px 5px;
+    cursor: pointer;
+
+
+
+    /* From https://css.glass */
+    background: rgba(18, 17, 17, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(18, 17, 17, 0.3);
+    transition: all .5s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.image_container {
+    height: 55%;
+}
+
+.image_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all .5s;
+    filter: grayscale(100);
+
+}
+
+.content_container {
+    text-align: center;
+    padding: 10px 5px;
+    color: white;
+    height: 45%;
+}
+
+.content_container h3 {
+    margin: 10px 0;
+}
+
+.icons_container {
+    margin-top: 10px;
+}
+
+.icons_container i {
+    margin: 5px 10px;
+}
+
+.card_container:hover {
+    /* From https://css.glass */
+    background: rgba(218, 206, 206, 0.02);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(218, 206, 206, 0.38);
+
+}
+
+
+.card_container:hover .main_img {
+    /* From https://css.glass */
+    transform: scale(1.1);
+    filter: grayscale(0);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    
+
+}
+.card_container:hover .cards_container {
+    /* From https://css.glass */
+    /* transform: scale(1.2); */
+    height: 520px;
+
+
+}
+
+.page2{
+    width: 100%;
+    height: 100vh;
+}
